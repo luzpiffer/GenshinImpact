@@ -1,0 +1,104 @@
+﻿/* Estilos generales */
+body {
+    font-family: "poppins", sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal del formulario de registro */
+form {
+    background-color: #f9f7fa;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos para las etiquetas de los inputs (Nombre, Apellido, etc.) */
+.auto-style2 {
+    font-size: 16px;
+    color: #555;
+    padding-right: 10px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.auto-style3 {
+    font-size: 16px;
+    color: #555;
+    padding-right: 10px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+/* Estilos para los inputs de texto */
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #dcd6f7;
+    background-color: #fffafc;
+    color: #555;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+    /* Cuando el input está en focus */
+    input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+        border-color: #bfb0d7;
+        outline: none;
+        background-color: #fbf8fd;
+    }
+
+/* Botón de registrarse */
+input[type="submit"], input[type="button"], .auto-style3 input[type="submit"] {
+    background-color: #d4a5f5;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    /* Hover en el botón */
+    input[type="submit"]:hover, input[type="button"]:hover {
+        background-color: #c48fe9;
+    }
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+
+    .auto-style2 {
+        font-size: 14px;
+    }
+}
+
+/* Estilo del link "¿Ya tené una cuenta? ¡Entra acá!" */
+.login-link {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+    /* Hover del link */
+    .login-link:hover {
+        color: #9060e0;
+    }
